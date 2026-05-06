@@ -3,56 +3,246 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iniciar sesión | La Barra</title>
-  <link rel="stylesheet" href="css/login.css">
+  <title>La Barra | Plataforma de gestión para bares</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <section class="login-page">
+  <header class="header">
+    <div class="logo">LA BARRA</div>
+
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#acerca">Acerca de</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#caracteristicas">Funciones</a>
+      <a href="#contacto">Contacto</a>
+      <a href="login.html" class="nav-login">Ingresar</a>
+    </nav>
+  </header>
+
+  <main class="hero" id="inicio">
     <div class="overlay"></div>
     <div class="glow glow-1"></div>
     <div class="glow glow-2"></div>
 
-    <div class="login-box">
-      <span class="login-tag">Acceso al sistema</span>
+    <section class="hero-container">
+      <article class="hero-content">
+        <span class="tagline">Sistema web para bares</span>
+        <h1>La Barra</h1>
+        <div class="linea"></div>
 
-      <h1>LA BARRA</h1>
-      <h2>Iniciar sesión</h2>
+        <p class="hero-text">
+          Plataforma digital enfocada en la gestión moderna de ventas,
+          inventario, bodega y productos, diseñada para optimizar la operación
+          de establecimientos tipo bar con una experiencia visual y profesional.
+        </p>
 
-      <p>
-        Accede a la plataforma para gestionar ventas, inventario,
-        bodega y productos de manera moderna, organizada y profesional.
-      </p>
-
-      <form class="login-form" action="dashboard.html">
-        <div class="input-group">
-          <label for="usuario">Usuario o correo</label>
-          <input
-            type="text"
-            id="usuario"
-            name="usuario"
-            placeholder="Ingresa tu usuario o correo"
-            required
-          >
+        <div class="hero-buttons">
+          <a href="login.html" class="btn btn-main">Ingresar</a>
+          <a href="#acerca" class="btn btn-outline">Explorar plataforma</a>
         </div>
 
-        <div class="input-group">
-          <label for="password">Contraseña</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Ingresa tu contraseña"
-            required
-          >
-        </div>
+        <p class="hero-note">
+          Solución orientada al control operativo, organización comercial y gestión profesional del negocio.
+        </p>
+      </article>
 
-        <button type="submit" class="btn-login">Ingresar</button>
-      </form>
+      <aside class="hero-panel">
+        <span class="panel-tag">Propuesta de valor</span>
+        <h2>Una solución diseñada para crecer</h2>
+        <p>
+          La Barra ofrece una propuesta digital enfocada en mejorar la administración
+          del negocio, fortalecer el control interno y brindar una experiencia moderna
+          para la gestión comercial.
+        </p>
 
-      <a href="index.html" class="back-link">Volver al inicio</a>
+        <ul class="panel-list">
+          <li>Control de ventas</li>
+          <li>Control de inventario y bodega</li>
+          <li>Administración de productos</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="hero-strip">
+      <div class="strip-item">Moderno</div>
+      <div class="strip-item">Profesional</div>
+      <div class="strip-item">Funcional</div>
+    </section>
+  </main>
+
+  <section class="acerca" id="acerca">
+    <div class="acerca-contenido">
+      <div class="acerca-texto">
+        <span class="section-tag">Acerca de</span>
+        <h2>Una propuesta moderna para la gestión de bares</h2>
+        <p>
+          La Barra es una plataforma digital orientada a mejorar la organización
+          de procesos como ventas, inventario, bodega y administración de productos
+          dentro de establecimientos tipo bar.
+        </p>
+        <p>
+          Su propuesta combina diseño visual, estructura funcional y una experiencia
+          enfocada en optimizar la operación del negocio de forma clara, moderna y profesional.
+        </p>
+      </div>
+
+      <div class="acerca-caja">
+        <h3>Enfoque del proyecto</h3>
+        <ul>
+          <li>Diseño visual atractivo</li>
+          <li>Organización operativa</li>
+          <li>Control de procesos internos</li>
+          <li>Interfaz moderna y funcional</li>
+        </ul>
+      </div>
     </div>
   </section>
+
+  <section class="servicios" id="servicios">
+    <span class="section-tag">Servicios</span>
+    <h2>Servicios principales</h2>
+    <p class="servicios-subtitulo">
+      Soluciones clave para optimizar la operación y administración de establecimientos tipo bar.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon">01</div>
+        <h3>Ventas</h3>
+        <p>
+          Registro y control de ventas de forma rápida, ordenada y eficiente,
+          mejorando la gestión diaria del negocio.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">02</div>
+        <h3>Inventario y bodega</h3>
+        <p>
+          Control de existencias, entradas y salidas de productos e insumos en bodega,
+          facilitando la organización y supervisión interna del negocio.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">03</div>
+        <h3>Productos</h3>
+        <p>
+          Administración de productos, precios y organización del catálogo
+          para una operación más clara y profesional.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="caracteristicas" id="caracteristicas">
+    <span class="section-tag">Funciones</span>
+    <h2>Características del sistema</h2>
+    <p class="servicios-subtitulo">
+      Herramientas diseñadas para mejorar la administración y el control operativo del bar.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon">04</div>
+        <h3>Usuarios y roles</h3>
+        <p>
+          Acceso diferenciado para administrador, jefe y mesera,
+          según las funciones dentro del sistema.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">05</div>
+        <h3>Control de bodega</h3>
+        <p>
+          Registro de entradas, salidas y seguimiento de elementos
+          o insumos disponibles.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">06</div>
+        <h3>Organización operativa</h3>
+        <p>
+          Información centralizada para mejorar el orden,
+          la supervisión y la toma de decisiones.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="cierre-contenido">
+      <span class="section-tag">Experiencia</span>
+      <h2>Una propuesta visual moderna para la gestión de tu bar</h2>
+      <p>
+        La Barra integra diseño, organización y funcionalidad en una propuesta web
+        enfocada en mejorar el control operativo de establecimientos tipo bar.
+      </p>
+      <a href="#contacto" class="btn btn-main">Explorar solución</a>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <span class="section-tag">Contacto</span>
+    <h2>Conecta con La Barra</h2>
+    <p class="contacto-subtitulo">
+      Proyecto formativo orientado al desarrollo de una solución web para la gestión de bares.
+    </p>
+
+    <div class="contacto-grid">
+      <div class="contacto-box">
+        <h3>Proyecto</h3>
+        <p>La Barra</p>
+      </div>
+
+      <div class="contacto-box">
+        <h3>Enfoque</h3>
+        <p>Ventas, inventario, bodega y productos</p>
+      </div>
+
+      <div class="contacto-box">
+        <h3>Tipo</h3>
+        <p>Proyecto formativo SENA</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-brand">
+        <h3>LA BARRA</h3>
+        <p>
+          Plataforma digital diseñada para optimizar la administración,
+          el control operativo, las ventas, el inventario y la bodega
+          en establecimientos tipo bar.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Secciones</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#caracteristicas">Funciones</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-info">
+        <h4>Solución</h4>
+        <p>Gestión de ventas</p>
+        <p>Control de inventario</p>
+        <p>Administración de productos</p>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      <p>© 2026 La Barra | Proyecto formativo SENA</p>
+    </div>
+  </footer>
 
 </body>
 </html>
