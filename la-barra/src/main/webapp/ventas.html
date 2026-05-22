@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventas | La Barra</title>
+  <link rel="stylesheet" href="css/ventas.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <h2>LA BARRA</h2>
+      <p>Módulo de ventas</p>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a href="dashboard.jsp.html">Inicio</a>
+      <a href="ventas.html" class="active">Ventas</a>
+      <a href="inventario.html">Inventario y bodega</a>
+      <a href="productos.html">Productos</a>
+      <a href="usuarios.html">Usuarios</a>
+      <a href="index.html">Cerrar sesión</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="topbar">
+      <div class="topbar-box">
+        <span class="topbar-tag">Módulo del sistema</span>
+        <h1>Gestión de ventas</h1>
+        <p>Registra y consulta las ventas realizadas en el sistema.</p>
+      </div>
+    </header>
+
+    <section class="ventas-grid">
+      <div class="form-box">
+        <h2>Registrar venta</h2>
+
+        <form class="ventas-form">
+          <div class="input-group">
+            <label for="producto">Producto</label>
+            <input type="text" id="producto" placeholder="Ej. Cerveza Poker" required>
+          </div>
+
+          <div class="input-group">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" placeholder="Ej. 2" required>
+          </div>
+
+          <div class="input-group">
+            <label for="precio">Precio unitario</label>
+            <input type="number" id="precio" placeholder="Ej. 5000" required>
+          </div>
+
+          <div class="input-group">
+            <label for="mesera">Responsable</label>
+            <input type="text" id="mesera" placeholder="Ej. Laura" required>
+          </div>
+
+          <button type="submit" class="btn-main">Guardar venta</button>
+        </form>
+      </div>
+
+      <div class="resumen-box">
+        <h2>Resumen</h2>
+
+        <div class="resumen-card">
+          <h3>Total de hoy</h3>
+          <p>$ 268.500</p>
+        </div>
+
+        <div class="resumen-card">
+          <h3>Ventas registradas</h3>
+          <p>9</p>
+        </div>
+
+        <div class="resumen-card">
+          <h3>Estado operativo</h3>
+          <p>Activo</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabla-box">
+      <h2>Historial de ventas</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+            <th>Responsable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cerveza Poker</td>
+            <td>2</td>
+            <td>$5.000</td>
+            <td>$10.000</td>
+            <td>Laura</td>
+          </tr>
+          <tr>
+            <td>Ron Medellín</td>
+            <td>1</td>
+            <td>$80.000</td>
+            <td>$80.000</td>
+            <td>Laura</td>
+          </tr>
+          <tr>
+            <td>Agua</td>
+            <td>3</td>
+            <td>$3.000</td>
+            <td>$9.000</td>
+            <td>Laura</td>
+          </tr>
+          <tr>
+            <td>Aguardiente Antioqueño</td>
+            <td>2</td>
+            <td>$45.000</td>
+            <td>$90.000</td>
+            <td>Laura</td>
+          </tr>
+          <tr>
+            <td>Gaseosa Coca-Cola</td>
+            <td>4</td>
+            <td>$4.000</td>
+            <td>$16.000</td>
+            <td>Laura</td>
+          </tr>
+          <tr>
+            <td>Cerveza Águila</td>
+            <td>5</td>
+            <td>$5.500</td>
+            <td>$27.500</td>
+            <td>Laura</td>
+          </tr>
+          <tr>
+            <td>Jugo Hit</td>
+            <td>2</td>
+            <td>$3.500</td>
+            <td>$7.000</td>
+            <td>Laura</td>
+          </tr>
+          <tr>
+            <td>Papas Margarita</td>
+            <td>3</td>
+            <td>$4.500</td>
+            <td>$13.500</td>
+            <td>Laura</td>
+          </tr>
+          <tr>
+            <td>Whisky Old Parr</td>
+            <td>1</td>
+            <td>$180.000</td>
+            <td>$180.000</td>
+            <td>Laura</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>

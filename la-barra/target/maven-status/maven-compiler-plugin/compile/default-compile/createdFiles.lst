@@ -1,0 +1,8 @@
+com\labarra\VentaServlet.class
+com\labarra\LoginServlet.class
+com\labarra\InventarioServlet.class
+com\labarra\JakartaRestConfiguration.class
+com\labarra\LogoutServlet.class
+com\labarra\UsuarioServlet.class
+com\labarra\ProductoServlet.class
+com\labarra\resources\JakartaEE10Resource.class
