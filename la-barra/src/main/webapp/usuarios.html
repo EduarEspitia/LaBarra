@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios | La Barra</title>
+  <link rel="stylesheet" href="css/usuarios.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <h2>LA BARRA</h2>
+      <p>Gestión de usuarios</p>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a href="dashboard.jsp.html">Inicio</a>
+      <a href="ventas.html">Ventas</a>
+      <a href="inventario.html">Inventario y bodega</a>
+      <a href="productos.html">Productos</a>
+      <a href="usuarios.html" class="active">Usuarios</a>
+      <a href="index.html">Cerrar sesión</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="topbar">
+      <div class="topbar-box">
+        <span class="topbar-tag">Módulo del sistema</span>
+        <h1>Gestión de usuarios</h1>
+        <p>Administra usuarios, accesos y roles dentro del sistema.</p>
+      </div>
+    </header>
+
+    <section class="usuarios-grid">
+      <div class="form-box">
+        <h2>Registrar usuario</h2>
+
+        <form class="usuarios-form">
+          <div class="input-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ej. Laura Gómez" required>
+          </div>
+
+          <div class="input-group">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="Ej. laura@gmail.com" required>
+          </div>
+
+          <div class="input-group">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" placeholder="Ej. laura123" required>
+          </div>
+
+          <div class="input-group">
+            <label for="rol">Rol</label>
+            <select id="rol" required>
+              <option value="">Selecciona un rol</option>
+              <option>Administrador</option>
+              <option>Jefe</option>
+              <option>Mesera</option>
+              <option>Bodega</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-main">Guardar usuario</button>
+        </form>
+      </div>
+
+      <div class="resumen-box">
+        <h2>Resumen</h2>
+
+        <div class="resumen-card">
+          <h3>Usuarios activos</h3>
+          <p>4</p>
+        </div>
+
+        <div class="resumen-card">
+          <h3>Roles definidos</h3>
+          <p>4</p>
+        </div>
+
+        <div class="resumen-card">
+          <h3>Control de accesos</h3>
+          <p>Activo</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabla-box">
+      <h2>Lista de usuarios</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Usuario</th>
+            <th>Rol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sofía Torres</td>
+            <td>sofia@gmail.com</td>
+            <td>sofia99</td>
+            <td>Administrador</td>
+          </tr>
+          <tr>
+            <td>Andrés Ruiz</td>
+            <td>andres@gmail.com</td>
+            <td>andres01</td>
+            <td>Jefe</td>
+          </tr>
+          <tr>
+            <td>Laura Gómez</td>
+            <td>laura@gmail.com</td>
+            <td>laura123</td>
+            <td>Mesera</td>
+          </tr>
+          <tr>
+            <td>Juan Pérez</td>
+            <td>juan@gmail.com</td>
+            <td>juanbodega</td>
+            <td>Bodega</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>
